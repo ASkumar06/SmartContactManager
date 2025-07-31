@@ -1,40 +1,41 @@
-HELP.md
-target/
+# Ignore build output
+/target/
+
+# Ignore Maven wrapper logs
 .mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-# Maven
-/target
+# Ignore IDE configs
+.idea/
 *.iml
 
-# IntelliJ
-.idea/
-*.iws
-*.ipr
-*.class
+# VS Code settings (optional)
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Node.js
+node_modules/
+package-lock.json
 
-### VS Code ###
-.vscode/
+# Tailwind CSS output (generated file - don't commit)
+src/main/resources/static/css/output.css
+
+# Optional: If you have other generated CSS files
+src/main/resources/static/styles/output.css
+*.css.map
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
